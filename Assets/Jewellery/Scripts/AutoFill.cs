@@ -37,6 +37,7 @@ public class AutoFill : MonoBehaviour
                 item.gameObject.SetActive(false);
                 var randomJwell = Instantiate(jewellPieces[index], item.transform.position, item.transform.rotation);
                 randomJwell.SetParent(_holder.transform);
+          
                 var jwellType = randomJwell.GetComponent<RayCaster>().jewellerPiece;
                 randomJwell.GetComponent<Rigidbody>().isKinematic = true;
 

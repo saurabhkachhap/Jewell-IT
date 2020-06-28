@@ -43,6 +43,7 @@ public class Mover : MonoBehaviour
 
                 gameObject.tag = _untag;
                 gameObject.transform.parent = _holder.transform;
+ 
                 this.enabled = false;
                 Vibration.VibratePeek();
             }
