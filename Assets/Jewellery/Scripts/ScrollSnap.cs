@@ -69,15 +69,13 @@ public class ScrollSnap : MonoBehaviour
         _dragging = false;
     }
 
-    public void GetSelectedJewelleryBox()
+    public void DisplaySelectedJewelleryBox()
     {
         selectedJewelleryBox.transform.SetParent(jbAnchor);
-        ResetTransform();
-    }
-
-    private void ResetTransform()
-    {
-        selectedJewelleryBox.anchoredPosition = Vector3.zero;
+        selectedJewelleryBox.anchoredPosition = Vector2.zero;
+        selectedJewelleryBox.transform.localPosition = Vector3.zero;
+        selectedJewelleryBox.localRotation = Quaternion.identity;
         selectedJewelleryBox.transform.localScale = Vector3.one;
+        //ResetTransform();
     }
 }

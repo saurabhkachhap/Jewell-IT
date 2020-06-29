@@ -11,14 +11,14 @@ public class Holder : MonoBehaviour
 
     public void DisplayNecklace()
     {
-        transform.SetParent(_scrollSnap.selectedJewelleryBox.GetChild(0));
+        transform.SetParent(_scrollSnap.selectedJewelleryBox);
         foreach (Transform child in transform)
         {
             child.gameObject.layer = 8;
         }
 
-        transform.localPosition = new Vector3(0f, 0.35f, -0.65f);
-        transform.localRotation = Quaternion.Euler(65.5f, 0f, 0f);
-        transform.localScale = Vector3.one;
+        transform.localPosition = new Vector3(0f, -150f, -200f);
+        transform.localRotation = Quaternion.Euler(-20f, 0f, 0f);
+        transform.localScale = new Vector3(150f, 150f, 150f);
     }
 }

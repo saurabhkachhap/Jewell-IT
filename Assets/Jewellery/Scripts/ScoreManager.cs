@@ -25,6 +25,8 @@ public class ScoreManager : MonoBehaviour
     private GameObject nextButton;
     [SerializeField]
     private TouchInput _touchInput;
+    [SerializeField]
+    private GameObject undoButton;
 
     private bool _isComplete;
 
@@ -54,6 +56,7 @@ public class ScoreManager : MonoBehaviour
         if (noOfJewelleryPieces <= 0)
         {
             //Debug.Log("jewellery complete");
+            undoButton.SetActive(false);
             _isComplete = true;
         }
         else
@@ -89,6 +92,7 @@ public class ScoreManager : MonoBehaviour
     {
         //auto fill jwellery
         _isComplete = true;
+        undoButton.SetActive(false);
     }
 
 

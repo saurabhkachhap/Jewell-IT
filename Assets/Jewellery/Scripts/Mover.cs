@@ -15,8 +15,11 @@ public class Mover : MonoBehaviour
     private Holder _holder;
     //private (Vector3, Quaternion, bool) _anchorProperty;
 
+    private UndoBooster _undoBooster;
+
     private void Awake()
     {
+        _undoBooster = FindObjectOfType<UndoBooster>();
         _rb = GetComponent<Rigidbody>();
         _scoreManager = FindObjectOfType<ScoreManager>();
         _holder = FindObjectOfType<Holder>();
@@ -43,7 +46,7 @@ public class Mover : MonoBehaviour
 
                 gameObject.tag = _untag;
                 gameObject.transform.parent = _holder.transform;
- 
+                _undoBooster.AddToHistory(gameObject, posContainer.GetValue(), anchorProperty.GetHitObject());
                 this.enabled = false;
                 Vibration.VibratePeek();
             }
