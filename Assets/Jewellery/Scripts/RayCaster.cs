@@ -17,7 +17,7 @@ public class RayCaster : MonoBehaviour
 
     private void Awake()
     {
-        _selectableLayer = 1 << 14;
+        _selectableLayer = 1 << 10;
     }
 
     private void OnEnable()

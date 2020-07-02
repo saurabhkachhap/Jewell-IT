@@ -139,7 +139,7 @@ public class SelectionManager : MonoBehaviour
         }           
     }
 
-    long[] pattern = new long[] { 0, 500, 500, 500,0 };
+    long[] pattern = new long[] { 0, 5, 5, 5,0 };
     public void FlickObjects()
     {
         //if (!_gObj) return;
@@ -147,7 +147,7 @@ public class SelectionManager : MonoBehaviour
         if (_plane.Raycast(mRay, out var hit))
         {
             flickObj.transform.position = mRay.GetPoint(hit);
-            Vibration.Vibrate(pattern, 0);
+            //Vibration.Vibrate(5);
         }
            
         //var pos = flickObj.transform.position;

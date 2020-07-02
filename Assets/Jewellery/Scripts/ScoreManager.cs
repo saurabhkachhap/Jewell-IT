@@ -14,7 +14,7 @@ public class ScoreManager : MonoBehaviour
     //[SerializeField]
     //private TextMeshProUGUI scoreText;
     [SerializeField]
-    private GameObject pendentDesignWindow;
+    private Move pendentDesignWindow;
     [SerializeField]
     private GameObject jewelleryBox;
     [SerializeField]
@@ -29,6 +29,8 @@ public class ScoreManager : MonoBehaviour
     private GameObject undoButton;
 
     private bool _isComplete;
+    [SerializeField]
+    private Feedbacks feedbacks;
 
     private void Awake()
     {
@@ -50,6 +52,9 @@ public class ScoreManager : MonoBehaviour
             var total = totalScore.GetValue();
             totalScore.SetValue(curScore + total);
             //scoreText.text = totalScore.GetValue().ToString();
+            //add feadback for player here
+
+            feedbacks.GiveFeedback();
            
         }
         noOfJewelleryPieces--;
@@ -68,17 +73,19 @@ public class ScoreManager : MonoBehaviour
 
     public void GoToNextTask()
     {
-        if (pendentDesignWindow.activeSelf)
+        if (pendentDesignWindow.enabled && _isComplete)
         {
-            pendentDesignWindow.SetActive(false);
+            //pendentDesignWindow.SetActive(false);
             jewelleryDisplayBoxWindow.SetActive(true);
+            pendentDesignWindow.gameObject.SetActive(false);
             nextButton.SetActive(false);
         }
 
-        else if (_isComplete)
+        if (_isComplete)
         {
-            pendentDesignWindow.SetActive(true);
-            jewelleryBox.SetActive(false);
+            //pendentDesignWindow.enabled = true;
+            //jewelleryBox.SetActive(false);
+            pendentDesignWindow.enabled = true;
             _touchInput.enabled = false;
         }
         else

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1886712961291741887}
   - component: {fileID: 1737496350972810082}
   - component: {fileID: 3518301727204855740}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Hexa
   m_TagString: Selectable
   m_Icon: {fileID: 0}
