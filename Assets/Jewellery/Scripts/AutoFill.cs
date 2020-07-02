@@ -8,7 +8,7 @@ public class AutoFill : MonoBehaviour
     private Transform anchor;
     [SerializeField]
     private Transform[] jewellPieces;
-    private List<Transform> _anchors;
+    private List<Transform> _anchorPoints;
     private ScoreManager _scoreManager;
     private Holder _holder;
 
@@ -16,17 +16,17 @@ public class AutoFill : MonoBehaviour
     {
         _holder = FindObjectOfType<Holder>();
         _scoreManager = GetComponent<ScoreManager>();
-        _anchors = new List<Transform>();
+        _anchorPoints = new List<Transform>();
 
         foreach (Transform child in anchor)
         {
-            _anchors.Add(child);
+            _anchorPoints.Add(child);
         }
     }
 
     public void EnableAutoFill()
     {
-        foreach (var item in _anchors)
+        foreach (var item in _anchorPoints)
         {
             if (item.gameObject.activeSelf)
             {

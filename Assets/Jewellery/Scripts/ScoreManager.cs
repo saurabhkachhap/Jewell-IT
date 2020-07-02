@@ -31,6 +31,7 @@ public class ScoreManager : MonoBehaviour
     private bool _isComplete;
     [SerializeField]
     private Feedbacks feedbacks;
+    private bool _isDisabled;
 
     private void Awake()
     {
@@ -53,8 +54,10 @@ public class ScoreManager : MonoBehaviour
             totalScore.SetValue(curScore + total);
             //scoreText.text = totalScore.GetValue().ToString();
             //add feadback for player here
-
-            feedbacks.GiveFeedback();
+            if (!_isDisabled)
+            {
+                feedbacks.GiveFeedback();
+            }          
            
         }
         noOfJewelleryPieces--;
@@ -100,6 +103,11 @@ public class ScoreManager : MonoBehaviour
         //auto fill jwellery
         _isComplete = true;
         undoButton.SetActive(false);
+    }
+
+    public void DisableFeedBack()
+    {
+        _isDisabled = true;
     }
 
 

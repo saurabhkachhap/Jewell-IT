@@ -17,8 +17,8 @@ public class Holder : MonoBehaviour
             child.gameObject.layer = 8;
         }
 
-        transform.localPosition = new Vector3(0f, -150f, -200f);
+        transform.localPosition = new Vector3(0f, 1f, 2f);
         transform.localRotation = Quaternion.Euler(-20f, 0f, 0f);
-        transform.localScale = new Vector3(150f, 150f, 150f);
+        transform.localScale = new Vector3(4.5f, 4.5f, 4.5f);
     }
 }
