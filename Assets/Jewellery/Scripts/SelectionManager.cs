@@ -14,13 +14,7 @@ public class SelectionManager : MonoBehaviour
 
     private string _selectableTag = "Selectable";
 
-    private ShockWave _shockWave;
-
-    private void Awake()
-    {
-        _shockWave = FindObjectOfType<ShockWave>();    
-    }
-   
+    //private ShockWave _shockWave;
 
     private Ray GenerateMouseRay()
     {
@@ -34,29 +28,6 @@ public class SelectionManager : MonoBehaviour
         return mr;
     }
 
-    //private void Update()
-    //{
-        //if(Input.touchCount > 0)
-        //{
-        //    var touch = Input.GetTouch(0);
-        //    if (Input.GetMouseButtonDown(0))
-        //    {
-        //        //SelectJewelleryPiece();
-        //    }
-        //    else if (Input.GetMouseButton(0) && _gObj)
-        //    {
-        //        //MoveSelectedPiece();
-        //    }
-        //    else if (Input.GetMouseButtonUp(0) && _gObj)
-        //    {
-        //        //DeselectPiece();
-
-        //    }
-        //}
-       
-        
-    //}
-
     public void DeselectPiece()
     {
         flickObj.SetActive(false);
@@ -67,7 +38,6 @@ public class SelectionManager : MonoBehaviour
         }       
         _gObj = null;
         
-        //timeToPick = Time.time + intervel;
     }
 
     public void MoveSelectedPiece()
@@ -101,15 +71,6 @@ public class SelectionManager : MonoBehaviour
                 _plane.Raycast(mRay, out var rayDistance);
                 _offset = _gObj.transform.position  + new Vector3(0, 0f, 0.2f) - mRay.GetPoint(rayDistance);
 
-                //_gObj.transform.position = mRay.GetPoint(rayDistance) + _offset /*+ new Vector3(0f,0f,0.2f)*/;
-                //var pos = _gObj.transform.position;
-                //pos.y = 0.3f;
-                //_gObj.transform.position = pos;
-
-                _shockWave.Explode();
-
-                //Debug.Log("explosion");
-
             }
         }
     }
@@ -142,16 +103,11 @@ public class SelectionManager : MonoBehaviour
     long[] pattern = new long[] { 0, 5, 5, 5,0 };
     public void FlickObjects()
     {
-        //if (!_gObj) return;
+        
         var mRay = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
         if (_plane.Raycast(mRay, out var hit))
         {
             flickObj.transform.position = mRay.GetPoint(hit);
-            //Vibration.Vibrate(5);
         }
-           
-        //var pos = flickObj.transform.position;
-        //pos.y = 0.5f;
-        //flickObj.transform.position = pos;
     }
 }

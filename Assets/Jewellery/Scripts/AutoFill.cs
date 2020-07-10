@@ -1,52 +1,67 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 public class AutoFill : MonoBehaviour
 {
+    //[SerializeField]
+    //private Transform anchor;
     [SerializeField]
-    private Transform anchor;
-    [SerializeField]
-    private Transform[] jewellPieces;
-    private List<Transform> _anchorPoints;
+    private AssetReferenceGameObject[] jewellPieces;
+    private Anchor[] _anchorTransform;
     private ScoreManager _scoreManager;
     private Holder _holder;
+    //private GameObject _anchorPoints;
+    //private AnchorPointsHolder _anchorPointholder;
 
     private void Awake()
     {
         _holder = FindObjectOfType<Holder>();
         _scoreManager = GetComponent<ScoreManager>();
-        _anchorPoints = new List<Transform>();
-
-        foreach (Transform child in anchor)
-        {
-            _anchorPoints.Add(child);
-        }
+       
     }
 
     public void EnableAutoFill()
     {
-        foreach (var item in _anchorPoints)
+        var _anchorPointholder = FindObjectOfType<AnchorPointsHolder>();
+        //var anchor = _anchorPointholder.transform;
+        //_anchorTransform = new List<Transform>();
+        _anchorTransform = _anchorPointholder.GetComponentsInChildren<Anchor>();
+
+        //foreach (Transform child in anchor)
+        //{
+        //    anchor.GetComponent<Anchor>();
+        //    _anchorTransform.Add(child);
+        //}
+        foreach (var item in _anchorTransform)
         {
+
             if (item.gameObject.activeSelf)
             {
-                //pick a random jewell
+                //pick a random jewell 
                 var index = Random.Range(0, jewellPieces.Length);
-                //instanctiate and place it on item transform
-                var anchorType = item.GetComponent<Anchor>().anchorType;
-                item.gameObject.SetActive(false);
-                var randomJwell = Instantiate(jewellPieces[index], item.transform.position, item.transform.rotation);
-                randomJwell.SetParent(_holder.transform);
-          
-                var jwellType = randomJwell.GetComponent<RayCaster>().jewellerPiece;
-                randomJwell.GetComponent<Rigidbody>().isKinematic = true;
+                var instantiatedJewell = Addressables.InstantiateAsync(jewellPieces[index], _holder.transform);
 
-                if(anchorType == jwellType)
+                var newJewell = instantiatedJewell.Result;
+                newJewell.transform.position = item.transform.position;
+                newJewell.transform.rotation = item.transform.rotation;
+
+                var jwellType = newJewell.GetComponent<RayCaster>().jewellerType;
+                newJewell.GetComponent<Rigidbody>().isKinematic = true;
+                var anchorObj = item.GetComponent<Anchor>();
                 {
-                    _scoreManager.CalculateScore(anchorType.pieceType, jwellType.pieceType);
-                    _scoreManager.IsComplete();
-                }
+                    if (anchorObj)
+                    {
+                        var anchorType = anchorObj.anchorType;
+                        item.gameObject.SetActive(false);
 
+                        if (anchorType == jwellType)
+                        {
+                            _scoreManager.CalculateScore(anchorType.pieceType, jwellType.pieceType);
+                            _scoreManager.IsComplete();
+                        }
+                    }
+                }
             }
         }
     }

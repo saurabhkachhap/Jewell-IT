@@ -15,7 +15,7 @@ public class MoveUI : MonoBehaviour
         _rect = GetComponent<RectTransform>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         MoveUiPosition();    
     }
@@ -23,5 +23,11 @@ public class MoveUI : MonoBehaviour
     private void MoveUiPosition()
     {
         LeanTween.move(_rect, moveTo, 0f).setSpeed(speed).setEase(tweenType);
+    }
+
+    public void MoveUiPosition(Vector3 pos)
+    {
+        var newPos = moveTo +pos;
+        LeanTween.moveY(_rect, newPos.y, 0f).setSpeed(speed).setEase(tweenType);
     }
 }

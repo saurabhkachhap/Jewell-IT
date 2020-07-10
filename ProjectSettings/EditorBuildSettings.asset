@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Example/Example/VibrationExample.unity
     guid: 1ca4fa42e3c3c4423998f38f6cdabc65
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 8d54cda87744e4543ba282948697d578,
+      type: 2}

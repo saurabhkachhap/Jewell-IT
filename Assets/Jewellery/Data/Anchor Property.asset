@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Anchor Property
   m_EditorClassIdentifier: 
   position: {fileID: 11400000, guid: 6e66cb1c7b5d555469b96fce9398edae, type: 2}
-  rotation: {x: -0, y: -0.23208418, z: -0, w: 0.9726957}
-  isAttachToAnchor: 0
-  anchorType: 1
+  rotation: {x: 0.7059939, y: 0.03965656, z: -0.03965656, w: 0.7059939}
+  hitObject: {fileID: 0}
+  isAttachToAnchor: 1
+  anchorType: 4
   currentSelectedPiece: 0

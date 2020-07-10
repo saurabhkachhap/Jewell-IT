@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784251e42c86b6741822dea1918e01e0, type: 3}
   m_Name: AnchorPosition
   m_EditorClassIdentifier: 
+  position: {x: -0.46599996, y: 0.086, z: 0.12475368}

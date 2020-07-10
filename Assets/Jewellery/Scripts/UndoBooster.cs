@@ -19,6 +19,7 @@ public class UndoBooster : MonoBehaviour
 
     public void AddToHistory(GameObject lastObj, Vector3 pos, GameObject anchor)
     {
+        //var anchor = SvedObject.GetHitObject().gameObject;
         _history.Add(new ArrayList { lastObj ,pos ,anchor});
     }
 
@@ -29,10 +30,10 @@ public class UndoBooster : MonoBehaviour
             var lastIndex = _history[_history.Count - 1];
             var lastPiece = (GameObject)lastIndex[0];
             var position = (Vector3)lastIndex[1];
-            var anchorPoint = (GameObject)lastIndex[2];
+            var anchor = (GameObject)lastIndex[2];
 
             lastPiece.transform.position = position;
-            anchorPoint.SetActive(true);
+            anchor.SetActive(true);
             lastPiece.transform.SetParent(parent);
             lastPiece.tag = "Selectable";
             noOfBostersLeft--;

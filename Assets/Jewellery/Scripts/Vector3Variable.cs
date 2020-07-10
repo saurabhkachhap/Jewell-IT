@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu]
 public class Vector3Variable : ScriptableObject
 {
+    [SerializeField]
     private Vector3 position;
 
     public void SetValue(Vector3 value)
@@ -16,5 +15,10 @@ public class Vector3Variable : ScriptableObject
     {
         return position;
     }
+
+    //private void OnEnable()
+    //{
+    //    position = Vector3.zero;
+    //}
 }
 

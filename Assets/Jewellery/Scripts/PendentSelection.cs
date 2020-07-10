@@ -11,6 +11,7 @@ public class PendentSelection : MonoBehaviour
     private void Awake()
     {
         _holder = FindObjectOfType<Holder>();
+        pendentAnchorPoint = GameObject.FindGameObjectWithTag("PAnchor").transform;
     }
     public void SelectPendent(GameObject pendent)
     {

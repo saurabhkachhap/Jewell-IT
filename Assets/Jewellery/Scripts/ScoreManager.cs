@@ -1,5 +1,4 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -11,8 +10,7 @@ public class ScoreManager : MonoBehaviour
     private FloatVariable totalScore;
     [SerializeField]
     private TransformProperty anchorProperty;
-    //[SerializeField]
-    //private TextMeshProUGUI scoreText;
+   
     [SerializeField]
     private Move pendentDesignWindow;
     [SerializeField]
@@ -31,11 +29,17 @@ public class ScoreManager : MonoBehaviour
     private bool _isComplete;
     [SerializeField]
     private Feedbacks feedbacks;
-    private bool _isDisabled;
+    private bool _isDisabled = false;
 
     private void Awake()
     {
-        ValuePerPiece();     
+        //ValuePerPiece();     
+    }
+
+    public void SetTotalNoOfJewelleryPieces(int count)
+    {
+        noOfJewelleryPieces = count;
+        ValuePerPiece();
     }
 
     private void ValuePerPiece()
@@ -57,8 +61,8 @@ public class ScoreManager : MonoBehaviour
             if (!_isDisabled)
             {
                 feedbacks.GiveFeedback();
-            }          
-           
+            }
+
         }
         noOfJewelleryPieces--;
         if (noOfJewelleryPieces <= 0)

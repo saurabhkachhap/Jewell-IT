@@ -2303,6 +2303,11 @@ public class LTDescr
 
 		return this;
 	}
+
+    internal void setSpeed(object speed)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 //}

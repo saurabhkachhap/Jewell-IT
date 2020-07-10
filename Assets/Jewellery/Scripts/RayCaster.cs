@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 
 public class RayCaster : MonoBehaviour
-{
-    //[SerializeField]
-    public JewellerPiece jewellerPiece;
+{ 
+    public JewellerPiece jewellerType;
     [SerializeField]
     private Vector3Variable _lastPickUpLocation;
     [SerializeField]
@@ -13,17 +12,20 @@ public class RayCaster : MonoBehaviour
     private GameObject _lastHitObj;
     private GameObject _currentHitObject;
     private Scale _scale;
+    private ShockWave _shockWave;
     
 
     private void Awake()
     {
         _selectableLayer = 1 << 10;
+        _shockWave = FindObjectOfType<ShockWave>();
     }
 
     private void OnEnable()
     {
         _lastPickUpLocation.SetValue(transform.position);
-        anchorTransform.SetCurrentSelectedPiece(jewellerPiece.pieceType);
+        anchorTransform.SetCurrentSelectedPiece(jewellerType.pieceType);
+        _shockWave.Explode(transform.position);
     }
 
     void Update()
@@ -44,7 +46,8 @@ public class RayCaster : MonoBehaviour
                 _scale.ScleBody();
                 _lastHitObj = _currentHitObject;
                 anchorTransform.SetTransformProperty(_currentHitObject.transform.position, _currentHitObject.transform.rotation,true);
-                anchorTransform.SetTransformProperty(_currentHitObject);
+                SvedObject.SetTransformProperty(anchor);
+                //anchorTransform.SetAnchor(anchor);
                 anchorTransform.SetAnchorType(anchor.anchorType.pieceType);
             }
         }

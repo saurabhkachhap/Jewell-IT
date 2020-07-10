@@ -2,14 +2,12 @@
 
 public class ShockWave : MonoBehaviour
 {
-    [SerializeField]
-    private Vector3Variable posContainer;
+    //private Vector3Variable posContainer;
     [SerializeField]
     private float intensity = 3f;
 
-    public void Explode()
+    public void Explode(Vector3 explosionPos)
     {
-        var explosionPos = posContainer.GetValue();
         Collider[] collider = Physics.OverlapSphere(explosionPos, 0.25f); 
         foreach (var hit in collider)
         {

@@ -1,18 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName ="Transform Property", menuName ="New Transform Property")]
 public class TransformProperty : ScriptableObject
 {
     [SerializeField]
     private Vector3Variable position;
-    public Quaternion rotation;
-    private GameObject hitObject;
-    public bool isAttachToAnchor = false;
-    public JewellerPiece.piece anchorType;
-    public JewellerPiece.piece currentSelectedPiece;
-    //public Collider collider;
+    [SerializeField]
+    private Quaternion rotation;
+    [SerializeField]
+    private bool isAttachToAnchor = false;
+    [SerializeField]
+    private JewellerPiece.piece anchorType;
+    [SerializeField]
+    private JewellerPiece.piece currentSelectedPiece;
 
     public void SetTransformProperty(Vector3 pos, Quaternion rot, bool flag)
     {
@@ -31,15 +31,6 @@ public class TransformProperty : ScriptableObject
         return (position.GetValue(),rotation,isAttachToAnchor);
     }
 
-    public void SetTransformProperty(GameObject obj)
-    {
-        hitObject = obj;      
-    }
-
-    public GameObject GetHitObject()
-    {
-        return hitObject;
-    }
 
     public void SetAnchorType(JewellerPiece.piece piece)
     {

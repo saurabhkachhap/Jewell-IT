@@ -6,6 +6,7 @@ public class JewellerPiece : ScriptableObject
     public enum piece
     {
         None,
+        Sphear,
         Heart,
         Square,
         Gem,

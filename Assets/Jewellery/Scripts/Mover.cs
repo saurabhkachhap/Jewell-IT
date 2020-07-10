@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class Mover : MonoBehaviour
 {
     [SerializeField]
-    private Vector3Variable posContainer;
+    private Vector3Variable jewelleryPos;
     [SerializeField]
     private TransformProperty anchorProperty;
 
@@ -20,6 +19,10 @@ public class Mover : MonoBehaviour
     private void Awake()
     {
         _undoBooster = FindObjectOfType<UndoBooster>();
+        if (!_undoBooster)
+        {
+            Debug.Log("Booster not found");
+        }
         _rb = GetComponent<Rigidbody>();
         _scoreManager = FindObjectOfType<ScoreManager>();
         _holder = FindObjectOfType<Holder>();
@@ -40,23 +43,24 @@ public class Mover : MonoBehaviour
             else
             {
                 anchorProperty.SetTransformProperty(false);
-                anchorProperty.GetHitObject().SetActive(false);
+                SvedObject.GetHitObject().gameObject.SetActive(false);
+
 
                 _scoreManager.CalculateScore(anchorProperty.GetAnchorType(), anchorProperty.GetCurrentSelectedPiece());
 
                 gameObject.tag = _untag;
                 gameObject.transform.parent = _holder.transform;
-                _undoBooster.AddToHistory(gameObject, posContainer.GetValue(), anchorProperty.GetHitObject());
+                _undoBooster.AddToHistory(gameObject, jewelleryPos.GetValue(), SvedObject.GetHitObject().gameObject);
                 this.enabled = false;
-                Vibration.VibratePeek();
+                Vibration.VibratePeek();                        
             }
         }
         else
         {
-            _distance = Vector3.Distance(transform.position, posContainer.GetValue());
+            _distance = Vector3.Distance(transform.position, jewelleryPos.GetValue());
             if (_distance > 0.1f)
             {
-                var newPos = Vector3.Lerp(transform.position, posContainer.GetValue(), 6f * Time.deltaTime);
+                var newPos = Vector3.Lerp(transform.position, jewelleryPos.GetValue(), 6f * Time.deltaTime);
                 transform.position = newPos;
                 //Debug.Log("corutin");
             }
