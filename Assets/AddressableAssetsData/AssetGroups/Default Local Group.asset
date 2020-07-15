@@ -16,7 +16,13 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 2ad4a9d12b27c7848bd6e375202e0e7d
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: aa34ad1d7e2c0164bafe53c405d7ebcc
+    m_Address: Theme_01/Design_01_L01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ff0cf78bd7e65de41a04026499943191, type: 2}
   m_SchemaSet:
