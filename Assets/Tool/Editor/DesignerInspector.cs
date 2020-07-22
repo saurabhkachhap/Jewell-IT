@@ -11,8 +11,7 @@ public class DesignerInspector : Editor
     {
         designer = target as JewelleryDesigner;
         designer.SpawnGems();
-
-
+        
     }
 
     //public override void OnInspectorGUI()

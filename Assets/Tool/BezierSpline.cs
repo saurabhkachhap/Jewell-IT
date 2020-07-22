@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent(typeof(JewelleryDesigner))]
+
 public class BezierSpline : MonoBehaviour
 {
     [SerializeField]

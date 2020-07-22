@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b7c146a448b0d4f8a358e5efab9813, type: 3}
+  m_Name: T_01_Slot_A
+  m_EditorClassIdentifier: 
+  gems:
+  - {fileID: 3700418199942888376, guid: 28e3841fccd909f4c88a690085236bb7, type: 3}
+  - {fileID: 3500091409112922249, guid: dad15a0fad8c5804c82bb124508bd275, type: 3}

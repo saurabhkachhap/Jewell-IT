@@ -1,12 +1,24 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(BezierSpline))]
 public class JewelleryDesigner : MonoBehaviour
 {
-	public BezierSpline _spline;
+	private BezierSpline _spline;
 
 	private int frequency;
 
-	public bool lookForward;
+	public bool lookForward = true;
+
+    private void Reset()
+    {
+		if (!_spline)
+        {
+			_spline = GetComponent<BezierSpline>();
+		}
+		
+    }
+
+	
 
     //public Transform[] items;
 
@@ -40,20 +52,4 @@ public class JewelleryDesigner : MonoBehaviour
 			}
 		}
 	}
-
-    //private void SetPosition()
-    //{
-    //    var point = _spline.GetPoint(0f);
-    //    var child = _spline.transform.GetChild(0);
-    //    child.position = point;
-
-    //    var steps = STEPS_PER_CURVE * _spline.CurveCount;
-    //    for (int i = 1; i < steps; i++)
-    //    {
-    //        point = _spline.GetPoint(i / (float)steps);
-    //        child = _spline.transform.GetChild(i);
-    //        child.position = point;
-    //    }
-
-    //}
 }
