@@ -30,7 +30,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7499069657720412888}
+  - {fileID: 3722221338300767205}
   m_Father: {fileID: 7499069658120022194}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -160,7 +160,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7499069658887402231}
+  - {fileID: 6602049264073315694}
   m_Father: {fileID: 7499069658120022194}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -406,7 +406,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7499069656961410064}
+  - {fileID: 1503922359593428885}
   m_Father: {fileID: 7499069658120022194}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -536,7 +536,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7499069657074014508}
+  - {fileID: 5748841071946169438}
   m_Father: {fileID: 7499069658120022194}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -725,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68aca48cef284a94094ff47e35e08589, type: 3}
---- !u!4 &7499069656961410064 stripped
+--- !u!4 &1503922359593428885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8992858831189771234, guid: 68aca48cef284a94094ff47e35e08589,
     type: 3}
@@ -830,7 +830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02e453c88ee8d114b89e573c9170ad3f, type: 3}
---- !u!4 &7499069657074014508 stripped
+--- !u!4 &5748841071946169438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2870464632697939222, guid: 02e453c88ee8d114b89e573c9170ad3f,
     type: 3}
@@ -925,7 +925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b67099d5362d2c4c8e4b2f411cf77d6, type: 3}
---- !u!4 &7499069657720412888 stripped
+--- !u!4 &3722221338300767205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6608452500286472539, guid: 7b67099d5362d2c4c8e4b2f411cf77d6,
     type: 3}
@@ -1020,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f350a13bec22d34da50a379563114c2, type: 3}
---- !u!4 &7499069658887402231 stripped
+--- !u!4 &6602049264073315694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3714692118503794684, guid: 3f350a13bec22d34da50a379563114c2,
     type: 3}

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Packed Assets
+  m_Name: Packed Assets Theme_Original
   m_EditorClassIdentifier: 
-  m_GroupName: Packed Assets
+  m_GroupName: Packed Assets Theme_Original
   m_Data:
     m_SerializedData: []
   m_GUID: cab78400d8d5cdf49b8ac4992ba79825
@@ -117,10 +117,8 @@ MonoBehaviour:
     m_Address: Theme_01/Anchors/Anchor Points.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 6290158916589627597, guid: f2dcaa7abc527fa47a8c55f490f01e70,
-      type: 3}
-    m_TargetAsset: {fileID: 6290158916589627597, guid: f2dcaa7abc527fa47a8c55f490f01e70,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ff0cf78bd7e65de41a04026499943191, type: 2}
   m_SchemaSet:
