@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71dfaeecb002fcf4a87b27778e69954a, type: 3}
+  m_Name: Level_08
+  m_EditorClassIdentifier: 
+  jewelleryPieces:
+  - Prefab:
+      m_AssetGUID: 89ce1ce7ffd543d4ebcfcd201e85a4e3
+      m_SubObjectName: 
+    quantity: 20
+  - Prefab:
+      m_AssetGUID: 7aed3ff2decd46849a07946e873a9a76
+      m_SubObjectName: 
+    quantity: 10
+  - Prefab:
+      m_AssetGUID: 0b842e3ecded78945ac2b4aaa54ed37f
+      m_SubObjectName: 
+    quantity: 5
+  - Prefab:
+      m_AssetGUID: 38682473f79168146bc38b1caa538438
+      m_SubObjectName: 
+    quantity: 3
+  - Prefab:
+      m_AssetGUID: 392191adb1fbb1e4d90d099445532910
+      m_SubObjectName: 
+    quantity: 10
+  - Prefab:
+      m_AssetGUID: de80bc24dca322d4d9f0f183dc764e97
+      m_SubObjectName: 
+    quantity: 10
+  pendents:
+    m_AssetGUID: b55cecc6b57a16f4b9352429e722169e
+    m_SubObjectName: 
+  anchorPoints:
+    m_AssetGUID: 4a1a3ace99eaf9e4c9c53d7e223875f1
+    m_SubObjectName: 
+  jewelleryDesign:
+    m_AssetGUID: 305f22919ff014841bdb679232eb97ae
+    m_SubObjectName: 

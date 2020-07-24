@@ -53,18 +53,6 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 614cc911cfec5b24196f7d88ba25f152
-    m_Address: Theme_01/Design_01_L02.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 856380b5eef5b9d4eb7c19d4d88cbaac
-    m_Address: Theme_01/Anchors/Anchor Point_01_L02.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 86364d26a7597294e9fdee3b0f4788a8
     m_Address: Theme_01/Heart.prefab
     m_ReadOnly: 0
@@ -95,8 +83,8 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: cc164b968686069478557c663cad6697
-    m_Address: Theme_01/Anchors/Design_01_L04.prefab
+  - m_GUID: d4b6a7b8ea31e3149a68725354302bb3
+    m_Address: Theme_01/Design_Original_L02.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
@@ -107,8 +95,22 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: db0d3c13622ddc946a6501c4bd32afef
-    m_Address: Theme_01/Design_01_L04.prefab
+  - m_GUID: db750aa067c6c6941bfa36b9d3eb8f32
+    m_Address: Theme_01/Anchors/Anchor Point_Original_L04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ddb9ca5b7c1399f4e8e8f0b2ad993f71
+    m_Address: Theme_01/Anchors/Anchor Point_Original_L02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8791071082356101884, guid: ddb9ca5b7c1399f4e8e8f0b2ad993f71,
+      type: 3}
+    m_TargetAsset: {fileID: 8791071082356101884, guid: ddb9ca5b7c1399f4e8e8f0b2ad993f71,
+      type: 3}
+  - m_GUID: f0c51212470ffdf4da9c7cb7a30f8cc8
+    m_Address: Theme_01/Design_Original_L04.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}

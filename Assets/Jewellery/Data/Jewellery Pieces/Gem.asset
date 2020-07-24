@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bace64af8417b84ea39e87c82b29a2f, type: 3}
   m_Name: Gem
   m_EditorClassIdentifier: 
-  pieceType: 3
+  pieceType: 4

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName ="Tempelate Size Data")]
+[CreateAssetMenu(menuName ="Tempelate/Tempelate Size Data")]
 public class TempelateData : ScriptableObject
 {
     public DataClass[] tempelateSizeVarient;

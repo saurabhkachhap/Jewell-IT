@@ -15,10 +15,11 @@ MonoBehaviour:
   size: 1
   jewellerySize:
   - {fileID: 4003642924093387401, guid: c40f9c592e7634448ba0b502db0b6ef9, type: 3}
-  - {fileID: 5101788432929559150, guid: 695690c24f6800e4c8ba8f309d399ff9, type: 3}
+  - {fileID: 9045183692388122336, guid: 695690c24f6800e4c8ba8f309d399ff9, type: 3}
   - {fileID: 750827476594875138, guid: a014e8b980604bc41b0839411a040efd, type: 3}
-  theme: {fileID: 11400000, guid: ab0ae1bc403d74b4fa4feb7353c8748b, type: 2}
+  theme: {fileID: 11400000, guid: 37ec133e3d1e2854a87b2a7e5de70d9e, type: 2}
   tempelateDesignData:
   - {fileID: 11400000, guid: 7f857887850c703448a1349a0ff71752, type: 2}
   - {fileID: 11400000, guid: 369bbfc2de587c946b21cf9752d9cdb6, type: 2}
+  - {fileID: 11400000, guid: 2aff9c6e0c3ce254fabe6c415abeb174, type: 2}
   - {fileID: 11400000, guid: 86fe8c10c6f515d458a320e18fae925a, type: 2}

@@ -11,7 +11,13 @@ public class JewellerPiece : ScriptableObject
         Square,
         Gem,
         Hex,
-        Diamond
+        Diamond,
+        BlueStone,
+        Conch,
+        RedStone,
+        SeaShell,
+        Shell,
+        StarFish
     }
 
     public piece pieceType = piece.None;

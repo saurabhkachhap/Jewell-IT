@@ -64,11 +64,12 @@ public class LevelDesignerTool : EditorWindow
                 propSize = so.FindProperty("size");
                 propTheme = so.FindProperty("theme");
                 //gameObject = design.jewellerySize[(int)design.size];
+                //themeName = design.theme.name;
                 fileName = "Design_" + design.theme.name + "_L00";
-                EditorUtility.SetDirty(design);
+                //EditorUtility.SetDirty(design);
             }
         }
-    
+       
         GUILayout.Space(10);
 
         EditorGUILayout.PropertyField(propSize);
