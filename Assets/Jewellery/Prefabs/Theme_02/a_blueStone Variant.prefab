@@ -16,19 +16,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &522555341953492938
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6744189032909801478}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.06792508
-  m_Center: {x: -0.000000011175871, y: 0, z: 0}
 --- !u!114 &6662197512640565980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +59,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jewelleryPos: {fileID: 11400000, guid: d9ae81cf399d584468b91152c02590d5, type: 2}
   anchorProperty: {fileID: 11400000, guid: db11ef44bcc38584d9acfae840cbd24e, type: 2}
+--- !u!65 &5114049982810873515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6744189032909801478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16981271, y: 0.16223472, z: 0.0501554}
+  m_Center: {x: -0.000000014901161, y: 0, z: 0}
 --- !u!1001 &2407536444840128564
 PrefabInstance:
   m_ObjectHideFlags: 0

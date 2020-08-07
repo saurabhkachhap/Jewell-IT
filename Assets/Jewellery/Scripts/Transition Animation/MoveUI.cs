@@ -9,6 +9,8 @@ public class MoveUI : MonoBehaviour
     private float speed;
     [SerializeField]
     private LeanTweenType tweenType;
+    [SerializeField]
+    private LeanTweenType loopType;
 
     private void Awake()
     {
@@ -22,7 +24,7 @@ public class MoveUI : MonoBehaviour
 
     private void MoveUiPosition()
     {
-        LeanTween.move(_rect, moveTo, 0f).setSpeed(speed).setEase(tweenType);
+        LeanTween.move(_rect, moveTo, 0f).setSpeed(speed).setEase(tweenType).setLoopType(loopType);
     }
 
     public void MoveUiPosition(Vector3 pos)

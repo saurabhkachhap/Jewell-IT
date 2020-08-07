@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8009283946918625421}
   - component: {fileID: 8009283946918625412}
   - component: {fileID: 8009283946918625415}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8009283946950675922}
   - component: {fileID: 8009283946950675949}
   - component: {fileID: 8009283946950675948}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 8009283947255002325}
   - component: {fileID: 8009283947255002348}
   - component: {fileID: 8009283947255002351}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 8009283947410879346}
   - component: {fileID: 8009283947410879245}
   - component: {fileID: 8009283947410879244}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 8009283947757303542}
   - component: {fileID: 8009283947757303537}
   - component: {fileID: 8009283947757303536}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8009283947847286188}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Design_01_L01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,8 +419,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8009283947847286161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.07, y: -0, z: 7.45}
-  m_LocalScale: {x: 12, y: 12, z: 12}
+  m_LocalPosition: {x: -2.85, y: -0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8009283947255002325}
   - {fileID: 8009283946918625421}
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 8009283947944966977}
   - component: {fileID: 8009283947944967000}
   - component: {fileID: 8009283947944967003}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 8009283948338059753}
   - component: {fileID: 8009283948338059744}
   - component: {fileID: 8009283948338059747}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 8009283948350817043}
   - component: {fileID: 8009283948350817066}
   - component: {fileID: 8009283948350817069}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 8009283948461361286}
   - component: {fileID: 8009283948461361281}
   - component: {fileID: 8009283948461361280}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 8009283948479815460}
   - component: {fileID: 8009283948479815487}
   - component: {fileID: 8009283948479815486}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sphere(Clone)
   m_TagString: Selectable
   m_Icon: {fileID: 0}

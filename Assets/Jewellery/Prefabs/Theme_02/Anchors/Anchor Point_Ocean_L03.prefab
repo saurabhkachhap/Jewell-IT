@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1300038328819475281}
   - component: {fileID: 735916276852938627}
   - component: {fileID: 735916276852938636}
+  - component: {fileID: 1327926794458677857}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -109,6 +110,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &1327926794458677857
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735916276852938637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299415
+  m_Center: {x: -0.00000001490116, y: 8.881784e-16, z: 0.000000007450581}
 --- !u!1 &976211428309061744
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +194,7 @@ GameObject:
   - component: {fileID: 651584610483612365}
   - component: {fileID: 1240234603259534871}
   - component: {fileID: 1240234603259534864}
+  - component: {fileID: 661816518531946598}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -276,6 +291,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &661816518531946598
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240234603259534865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299415
+  m_Center: {x: -0.000000014901161, y: 0, z: 0.000000007450581}
 --- !u!1 &1290597789892815787
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +317,7 @@ GameObject:
   - component: {fileID: 708694440224825207}
   - component: {fileID: 1290597789892815785}
   - component: {fileID: 1290597789892815786}
+  - component: {fileID: 3048081563516497714}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -385,6 +414,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &3048081563516497714
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290597789892815787}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299414
+  m_Center: {x: -0.00000001490116, y: 0, z: 0.000000007450581}
 --- !u!1 &2759271035912047815
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +440,7 @@ GameObject:
   - component: {fileID: 4500838135115937819}
   - component: {fileID: 2759271035912047813}
   - component: {fileID: 2759271035912047814}
+  - component: {fileID: 4880704259532254848}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -494,6 +537,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &4880704259532254848
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2759271035912047815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.072994165
+  m_Center: {x: -0.000000014901165, y: 1.7756508e-15, z: 0.000000007450582}
 --- !u!1 &3293147968255740181
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +563,7 @@ GameObject:
   - component: {fileID: 3859385515476057545}
   - component: {fileID: 3293147968255740171}
   - component: {fileID: 3293147968255740180}
+  - component: {fileID: 4915937642610164751}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -603,6 +660,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &4915937642610164751
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293147968255740181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299418
+  m_Center: {x: -0.000000014901161, y: 6.871067e-16, z: 0.000000007450582}
 --- !u!1 &4347743431696746252
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +686,7 @@ GameObject:
   - component: {fileID: 2624085178305262544}
   - component: {fileID: 4347743431696746242}
   - component: {fileID: 4347743431696746243}
+  - component: {fileID: 5169050475652009894}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -712,6 +783,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &5169050475652009894
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347743431696746252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299417
+  m_Center: {x: -0.000000014901165, y: 1.8296375e-15, z: 0.000000007450581}
 --- !u!1 &4680857081055256196
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +809,7 @@ GameObject:
   - component: {fileID: 6397759901199346264}
   - component: {fileID: 4680857081055256250}
   - component: {fileID: 4680857081055256251}
+  - component: {fileID: 7159500949033168387}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -821,6 +906,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &7159500949033168387
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4680857081055256196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299417
+  m_Center: {x: -0.00000001490116, y: 1.5336683e-15, z: 0.0000000074505815}
 --- !u!1 &5054471682483249785
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +932,7 @@ GameObject:
   - component: {fileID: 6780663175751489189}
   - component: {fileID: 5054471682483249791}
   - component: {fileID: 5054471682483249784}
+  - component: {fileID: 5463033789357500056}
   m_Layer: 10
   m_Name: A_shell_01
   m_TagString: Untagged
@@ -930,6 +1029,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: e1e03990f7ec2a94797002ab3f3821b3, type: 2}
+--- !u!135 &5463033789357500056
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054471682483249785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07592077
+  m_Center: {x: 0.000000029802326, y: -0.0000000037252907, z: -9.313226e-10}
 --- !u!1 &5488240581495132397
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,6 +1055,7 @@ GameObject:
   - component: {fileID: 6059298318804362289}
   - component: {fileID: 5488240581495132387}
   - component: {fileID: 5488240581495132396}
+  - component: {fileID: 6615783254354476913}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -1039,6 +1152,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &6615783254354476913
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5488240581495132397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299417
+  m_Center: {x: -0.000000014901163, y: 1.8026852e-15, z: 0.000000007450581}
 --- !u!1 &6465108764574980302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,6 +1178,7 @@ GameObject:
   - component: {fileID: 4721030415191878674}
   - component: {fileID: 6465108764574980300}
   - component: {fileID: 6465108764574980301}
+  - component: {fileID: 6298158050210346888}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -1148,6 +1275,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &6298158050210346888
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6465108764574980302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299416
+  m_Center: {x: -0.000000014901165, y: -4.440892e-16, z: 0.000000007450581}
 --- !u!1 &7316921103008775766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,6 +1301,7 @@ GameObject:
   - component: {fileID: 9058492525785352842}
   - component: {fileID: 7316921103008775764}
   - component: {fileID: 7316921103008775765}
+  - component: {fileID: 5818765106790822958}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -1257,6 +1398,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &5818765106790822958
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316921103008775766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299417
+  m_Center: {x: -0.000000014901167, y: 1.976443e-15, z: 0.000000007450582}
 --- !u!1 &7565283663813504023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1424,7 @@ GameObject:
   - component: {fileID: 8124950456397551819}
   - component: {fileID: 7565283663813504021}
   - component: {fileID: 7565283663813504022}
+  - component: {fileID: 6656543527067177399}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -1366,6 +1521,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &6656543527067177399
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565283663813504023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299415
+  m_Center: {x: -0.000000014901161, y: 0, z: 0.000000007450581}
 --- !u!1 &8436223027898667311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1547,7 @@ GameObject:
   - component: {fileID: 7867694167685391859}
   - component: {fileID: 8436223027898667309}
   - component: {fileID: 8436223027898667310}
+  - component: {fileID: 3611263676317602067}
   m_Layer: 10
   m_Name: A_redStone
   m_TagString: Untagged
@@ -1475,6 +1644,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: 4a471e8bc403ad04cba993b164a64f2f, type: 2}
+--- !u!135 &3611263676317602067
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436223027898667311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07299416
+  m_Center: {x: -0.00000001490116, y: -5.551115e-17, z: 0.000000007450581}
 --- !u!1 &8976720838385691539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1670,7 @@ GameObject:
   - component: {fileID: 7255138496870965071}
   - component: {fileID: 8976720838385691537}
   - component: {fileID: 8976720838385691538}
+  - component: {fileID: 821017274871937758}
   m_Layer: 10
   m_Name: A_shell_01
   m_TagString: Untagged
@@ -1584,6 +1767,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anchorType: {fileID: 11400000, guid: e1e03990f7ec2a94797002ab3f3821b3, type: 2}
+--- !u!135 &821017274871937758
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8976720838385691539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0759208
+  m_Center: {x: 0.000000029802333, y: -0.000000003725293, z: -9.313221e-10}
 --- !u!1001 &5363420129615884156
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 1672383065004904554}
   - component: {fileID: 585492079414143464}
   - component: {fileID: 2822767471633542874}
+  - component: {fileID: 7839968397789023973}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -267,6 +268,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &7839968397789023973
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047267019858905410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393317
+  m_Center: {x: 2.7729263e-11, y: -0.0018608794, z: 0}
 --- !u!1 &1966670693781104736
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +294,7 @@ GameObject:
   - component: {fileID: 213596438577115464}
   - component: {fileID: 997236369532828665}
   - component: {fileID: 8277523553652242689}
+  - component: {fileID: 8959952229548413851}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -376,6 +391,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &8959952229548413851
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966670693781104736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393343
+  m_Center: {x: 0, y: -0.0018608798, z: -4.381838e-10}
 --- !u!1 &2555998753793587505
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +417,7 @@ GameObject:
   - component: {fileID: 4234904361222152217}
   - component: {fileID: 4697047512515621562}
   - component: {fileID: 4886664594014426752}
+  - component: {fileID: 2467540214672221060}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -485,6 +514,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &2467540214672221060
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555998753793587505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.05939332
+  m_Center: {x: 1.1091705e-10, y: -0.0018608794, z: 0}
 --- !u!1 &2557200383666826908
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +598,7 @@ GameObject:
   - component: {fileID: 4007830079823389813}
   - component: {fileID: 378209316497751201}
   - component: {fileID: 6656171431997093115}
+  - component: {fileID: 7082025682873040850}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -652,6 +695,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &7082025682873040850
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3324624636828499293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393335
+  m_Center: {x: 2.218341e-10, y: -0.0018608798, z: -5.0302436e-11}
 --- !u!1 &3559771205341590406
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +721,7 @@ GameObject:
   - component: {fileID: 2943952597781818030}
   - component: {fileID: 1944427832014410016}
   - component: {fileID: 1753695615063406986}
+  - component: {fileID: 8870294695727327389}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -761,6 +818,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &8870294695727327389
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3559771205341590406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393313
+  m_Center: {x: 0, y: -0.0018608792, z: 0}
 --- !u!1 &3953214416412093512
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +844,7 @@ GameObject:
   - component: {fileID: 6935367992764796153}
   - component: {fileID: 3519303585718735672}
   - component: {fileID: 3763817034237854774}
+  - component: {fileID: 5516560854918759304}
   m_Layer: 10
   m_Name: Gem
   m_TagString: Untagged
@@ -871,6 +942,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &5516560854918759304
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3953214416412093512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.02714035
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3955475623252973165
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +968,7 @@ GameObject:
   - component: {fileID: 6919622497677342428}
   - component: {fileID: 7033338624582146703}
   - component: {fileID: 8092528297796437605}
+  - component: {fileID: 3798339931956936191}
   m_Layer: 10
   m_Name: Gem
   m_TagString: Untagged
@@ -981,6 +1066,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &3798339931956936191
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3955475623252973165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.02714036
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5902945778285979125
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1092,7 @@ GameObject:
   - component: {fileID: 5212535786434706653}
   - component: {fileID: 7171732572542158109}
   - component: {fileID: 8028689670831450909}
+  - component: {fileID: 2612931034929948589}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -1090,6 +1189,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &2612931034929948589
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902945778285979125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393324
+  m_Center: {x: -6.932316e-12, y: -0.0018608796, z: 0}
 --- !u!1 &5984222070992300566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1215,7 @@ GameObject:
   - component: {fileID: 5382335933278286654}
   - component: {fileID: 4645760306169703661}
   - component: {fileID: 5725462441540141490}
+  - component: {fileID: 7202966059939739868}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -1199,6 +1312,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &7202966059939739868
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5984222070992300566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.05939333
+  m_Center: {x: 5.5458527e-11, y: -0.0018608798, z: 0}
 --- !u!1 &6258239856690459632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1338,7 @@ GameObject:
   - component: {fileID: 5720811478507514584}
   - component: {fileID: 2314681300031216036}
   - component: {fileID: 3375346880859293085}
+  - component: {fileID: 4490784030570282232}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -1308,6 +1435,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &4490784030570282232
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6258239856690459632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393343
+  m_Center: {x: 5.5458527e-11, y: -0.0018608798, z: -3.460587e-10}
 --- !u!1 &6385981542460237734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1461,7 @@ GameObject:
   - component: {fileID: 4693397495799627406}
   - component: {fileID: 5060275154166023159}
   - component: {fileID: 8162155599316317641}
+  - component: {fileID: 7295109589097978726}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -1417,6 +1558,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &7295109589097978726
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6385981542460237734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.05939334
+  m_Center: {x: 2.218341e-10, y: -0.0018608798, z: -1.7295143e-10}
 --- !u!1 &6562903604051749170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1584,7 @@ GameObject:
   - component: {fileID: 4803584098049306650}
   - component: {fileID: 7409783740445617658}
   - component: {fileID: 2055967027645102532}
+  - component: {fileID: 1275800595075414855}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -1526,6 +1681,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &1275800595075414855
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6562903604051749170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393317
+  m_Center: {x: -5.5458527e-11, y: -0.0018608794, z: 0}
 --- !u!1 &7799638701537558789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1707,7 @@ GameObject:
   - component: {fileID: 8466835830489094189}
   - component: {fileID: 8238590687149784503}
   - component: {fileID: 1519275754604430590}
+  - component: {fileID: 342512091345122868}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -1635,6 +1804,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &342512091345122868
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799638701537558789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.059393335
+  m_Center: {x: -6.932316e-12, y: -0.0018608796, z: -4.4349188e-10}
 --- !u!1 &8010284751746517041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1830,7 @@ GameObject:
   - component: {fileID: 8545549290314354969}
   - component: {fileID: 2706437714285427353}
   - component: {fileID: 7818019267923814615}
+  - component: {fileID: 4246268751841871822}
   m_Layer: 10
   m_Name: Heart
   m_TagString: Untagged
@@ -1744,6 +1927,19 @@ MonoBehaviour:
   scaleAmount: 1.7
   speed: 2.5
   tweenType: 30
+--- !u!135 &4246268751841871822
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8010284751746517041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.05939334
+  m_Center: {x: 5.5458527e-11, y: -0.0018608801, z: -5.238256e-12}
 --- !u!1001 &2019179390168070217
 PrefabInstance:
   m_ObjectHideFlags: 0

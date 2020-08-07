@@ -30,6 +30,7 @@ public class Feedbacks : MonoBehaviour
         feedbackText.text = feedbackStrings[index];
         var anchorWorldPos = SvedObject.GetHitObject().transform.position;
         _anchorScreenPos = _cam.WorldToScreenPoint(anchorWorldPos);
+        _anchorScreenPos = new Vector3(_anchorScreenPos.x, _anchorScreenPos.y + 70f, _anchorScreenPos.z);
         feedbackText.rectTransform.position = _anchorScreenPos;
 
         _alphaText.IncreaseOpacity();

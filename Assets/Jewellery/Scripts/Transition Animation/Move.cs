@@ -8,6 +8,8 @@ public class Move : MonoBehaviour
     private float speed;
     [SerializeField]
     private LeanTweenType tweenType;
+    [SerializeField]
+    private LeanTweenType loopType;
 
     private void Start()
     {
@@ -16,6 +18,6 @@ public class Move : MonoBehaviour
 
     public void MoveTransition()
     {
-        LeanTween.move(gameObject, posToMove, 0f).setSpeed(speed).setEase(tweenType);
+        LeanTween.move(gameObject, posToMove, 0f).setSpeed(speed).setEase(tweenType).setLoopType(loopType);
     }
 }

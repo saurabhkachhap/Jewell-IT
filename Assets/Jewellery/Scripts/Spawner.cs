@@ -1,33 +1,46 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class Spawner : MonoBehaviour
 {
     [SerializeField]
     private Transform jwellerySpawnPoint;
-    [SerializeField]
-    private Transform pendentSpawnPoint;
+    //[SerializeField]
+    //private Transform pendentSpawnPoint;
     [SerializeField]
     private Transform designSpawnPoint;
+    [SerializeField]
+    private GameObject cashVfx;
+    [SerializeField]
+    private GameObject container;
+    [SerializeField]
+    private Transform anchorSpawnPoint;
 
     private LevelManager _levelManager;
+    private List<GameObject> assetsInMemory;
+
 
     private void Awake()
     {
         _levelManager = FindObjectOfType<LevelManager>();
+        assetsInMemory = new List<GameObject>();
     }
 
     private void OnEnable()
     {
         SpawnDesign();
-        SpawnJwellPieces();
-        SpawnAnchor();
-        SpawnPendent();
+        //SpawnJwellPieces();
+        //SpawnAnchor();
+        //SpawnPendent();
         
     }
 
-    private void SpawnJwellPieces()
+    public void SpawnJwellPieces()
     {
+        container.SetActive(true);
         var totalJeweleryPiece = _levelManager.GetCurrentLevel().jewelleryPieces.Length;
         for (int i = 0; i < totalJeweleryPiece; i++)
         {
@@ -35,24 +48,55 @@ public class Spawner : MonoBehaviour
             //Debug.Log(quantity);
             for (int j = 0; j <= quantity; j++)
             {
-                Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().jewelleryPieces[i].Prefab, jwellerySpawnPoint);
+                Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().jewelleryPieces[i].Prefab, jwellerySpawnPoint).Completed += g =>
+                {
+                    if (g.Status == AsyncOperationStatus.Succeeded)
+                    {
+                        //var result = g.Result;
+                        g.Result.transform.position = jwellerySpawnPoint.position;
+                        assetsInMemory.Add(g.Result);
+                    }
+                };
+                
             }
-        }       
+        }
+        
     }
 
-    private void SpawnPendent()
-    {
-        Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().pendents, pendentSpawnPoint);
-    }
+    //private void SpawnPendent()
+    //{
+    //    var g = Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().pendents, pendentSpawnPoint);
+    //    assetsInMemory.Add(g.Result);
+    //    //container.SetActive(false);
+    //}
 
-    private void SpawnAnchor()
+    public void SpawnAnchor()
     {
-        Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().anchorPoints);
+        var g = Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().anchorPoints, anchorSpawnPoint);
+        assetsInMemory.Add(g.Result);       
     }
 
     private void SpawnDesign()
     {
-        Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().jewelleryDesign, designSpawnPoint);
+        var g = Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().jewelleryDesign, designSpawnPoint);
+        assetsInMemory.Add(g.Result);
+    }
+
+    public void RemoveAssetFromMemory()
+    {
+        StartCoroutine(nameof(RemoveAsset));
+    }
+
+    private IEnumerator RemoveAsset()
+    {
+        cashVfx.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
+        foreach (var item in assetsInMemory)
+        {
+            Addressables.ReleaseInstance(item);
+        }
+        yield return new WaitForEndOfFrame();
+        _levelManager.ResetLevel();
     }
 
 }

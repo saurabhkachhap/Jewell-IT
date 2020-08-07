@@ -36,7 +36,7 @@ MonoBehaviour:
   - Prefab:
       m_AssetGUID: dad15a0fad8c5804c82bb124508bd275
       m_SubObjectName: 
-    quantity: 10
+    quantity: 25
   pendents:
     m_AssetGUID: b55cecc6b57a16f4b9352429e722169e
     m_SubObjectName: 

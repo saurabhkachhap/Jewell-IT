@@ -32,7 +32,7 @@ MonoBehaviour:
   - Prefab:
       m_AssetGUID: a69a08936a5eed5458c581a8163b0709
       m_SubObjectName: 
-    quantity: 10
+    quantity: 20
   - Prefab:
       m_AssetGUID: dad15a0fad8c5804c82bb124508bd275
       m_SubObjectName: 
@@ -41,8 +41,8 @@ MonoBehaviour:
     m_AssetGUID: b55cecc6b57a16f4b9352429e722169e
     m_SubObjectName: 
   anchorPoints:
-    m_AssetGUID: 389565098ffcb11419069bb119493e84
+    m_AssetGUID: 2c0e7de6c8ade0641a69d75b8cae2dce
     m_SubObjectName: 
   jewelleryDesign:
-    m_AssetGUID: 19c636e58eb4c9649a621f1685b35636
+    m_AssetGUID: cf470c4c443291449adba510f98f61cd
     m_SubObjectName: 

@@ -169,6 +169,9 @@ public class LevelDesignerTool : EditorWindow
                 case 3:
                     newGem = section[2];
                     break;
+                case 4:
+                    newGem = section[3];
+                    break;
             }
 
             var newSpawnedGem = (GameObject)PrefabUtility.InstantiatePrefab(newGem, newGameObject.transform);

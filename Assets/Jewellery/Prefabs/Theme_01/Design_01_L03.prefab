@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7951429970677863805}
   - component: {fileID: 4719000512408624146}
   - component: {fileID: 6493217892236367647}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8136857529635691206}
   - component: {fileID: 2754045768823730881}
   - component: {fileID: 8057423504905057303}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 978698987181834789}
   - component: {fileID: 575359422040188283}
   - component: {fileID: 6282580581410424151}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 5611235596670713327}
   - component: {fileID: 2741542939301008542}
   - component: {fileID: 9138693935227645056}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 1520410616262300824}
   - component: {fileID: 7421107426125262850}
   - component: {fileID: 713910821496783630}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 7718316173549443548}
   - component: {fileID: 694671117528353924}
   - component: {fileID: 7486487098895346241}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 1820828167248321622}
   - component: {fileID: 2609889664314690085}
   - component: {fileID: 8325794682891951327}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 3957678445890326066}
   - component: {fileID: 6772167440715605705}
   - component: {fileID: 8685488031134277430}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 1173817071107788718}
   - component: {fileID: 2368801938938187331}
   - component: {fileID: 5460298726865120954}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 4404765051390152579}
   - component: {fileID: 732853378928630761}
   - component: {fileID: 3771177248232173152}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7413467295420600205}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Design_01_L03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,8 +814,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5817160755586514334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8732094354360174867}
   - {fileID: 7508676026232572599}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 5722318624247886862}
   - component: {fileID: 1697890471944962968}
   - component: {fileID: 3934976605325382554}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 4230546198791269948}
   - component: {fileID: 1432917998365975560}
   - component: {fileID: 3810460670608766758}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 6533171240152939062}
   - component: {fileID: 1575565551018309944}
   - component: {fileID: 4182415391423393724}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 8732094354360174867}
   - component: {fileID: 7536136144685217283}
   - component: {fileID: 960289080627346577}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1165,7 +1165,7 @@ GameObject:
   - component: {fileID: 6384104372060784698}
   - component: {fileID: 1362521217400939415}
   - component: {fileID: 485683083789780119}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1244,7 @@ GameObject:
   - component: {fileID: 3139936654370978604}
   - component: {fileID: 3085748430800177681}
   - component: {fileID: 3138821057693533711}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1323,7 +1323,7 @@ GameObject:
   - component: {fileID: 1557035847296847626}
   - component: {fileID: 817586743242388138}
   - component: {fileID: 469377282345151197}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1402,7 @@ GameObject:
   - component: {fileID: 7508676026232572599}
   - component: {fileID: 4791405394919166532}
   - component: {fileID: 7236253718199943}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Gem3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

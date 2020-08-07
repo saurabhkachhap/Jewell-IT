@@ -2,7 +2,6 @@
 
 public class PendentSelection : MonoBehaviour
 {
-    [SerializeField]
     private Transform pendentAnchorPoint;
     private GameObject _currentSelection;
     private GameObject _lastSelection;
@@ -11,10 +10,17 @@ public class PendentSelection : MonoBehaviour
     private void Awake()
     {
         _holder = FindObjectOfType<Holder>();
-        pendentAnchorPoint = GameObject.FindGameObjectWithTag("PAnchor").transform;
+        
     }
+
+
     public void SelectPendent(GameObject pendent)
     {
+        if (!pendentAnchorPoint)
+        {
+            pendentAnchorPoint = FindObjectOfType<PendantAnchor>().transform;
+        }
+        
         if (_lastSelection)
         {
             Destroy(_lastSelection);

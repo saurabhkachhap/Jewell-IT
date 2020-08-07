@@ -14,25 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jewelleryPieces:
   - Prefab:
-      m_AssetGUID: 89ce1ce7ffd543d4ebcfcd201e85a4e3
+      m_AssetGUID: 0b842e3ecded78945ac2b4aaa54ed37f
       m_SubObjectName: 
     quantity: 20
   - Prefab:
-      m_AssetGUID: 7aed3ff2decd46849a07946e873a9a76
-      m_SubObjectName: 
-    quantity: 10
-  - Prefab:
-      m_AssetGUID: 0b842e3ecded78945ac2b4aaa54ed37f
-      m_SubObjectName: 
-    quantity: 5
-  - Prefab:
       m_AssetGUID: 38682473f79168146bc38b1caa538438
       m_SubObjectName: 
-    quantity: 3
+    quantity: 10
   - Prefab:
       m_AssetGUID: 392191adb1fbb1e4d90d099445532910
       m_SubObjectName: 
-    quantity: 10
+    quantity: 5
+  - Prefab:
+      m_AssetGUID: 7aed3ff2decd46849a07946e873a9a76
+      m_SubObjectName: 
+    quantity: 15
+  - Prefab:
+      m_AssetGUID: 89ce1ce7ffd543d4ebcfcd201e85a4e3
+      m_SubObjectName: 
+    quantity: 20
   - Prefab:
       m_AssetGUID: de80bc24dca322d4d9f0f183dc764e97
       m_SubObjectName: 

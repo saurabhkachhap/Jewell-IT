@@ -24,7 +24,7 @@ MonoBehaviour:
   - Prefab:
       m_AssetGUID: 0b842e3ecded78945ac2b4aaa54ed37f
       m_SubObjectName: 
-    quantity: 5
+    quantity: 20
   - Prefab:
       m_AssetGUID: 38682473f79168146bc38b1caa538438
       m_SubObjectName: 

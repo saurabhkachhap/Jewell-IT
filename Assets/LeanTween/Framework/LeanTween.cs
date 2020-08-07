@@ -2860,7 +2860,10 @@ public class LeanTween : MonoBehaviour {
         }
     }
 
-
+    internal static void move(RectTransform rectTransform, object moveTo)
+    {
+        throw new NotImplementedException();
+    }
 } // End LeanTween class
 
 public class LTUtility {

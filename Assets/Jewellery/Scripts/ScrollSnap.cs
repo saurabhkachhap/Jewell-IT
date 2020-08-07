@@ -11,7 +11,9 @@ public class ScrollSnap : MonoBehaviour
     [SerializeField]
     private RectTransform jbAnchor;
     [SerializeField]
-    private GameObject[] pageDot; 
+    private GameObject[] pageDot;
+    [SerializeField]
+    private GameObject starParticle;
 
     private float[] _distance;
     private bool _dragging = false;
@@ -75,7 +77,9 @@ public class ScrollSnap : MonoBehaviour
         selectedJewelleryBox.anchoredPosition = Vector2.zero;
         selectedJewelleryBox.transform.localPosition = Vector3.zero;
         selectedJewelleryBox.localRotation = Quaternion.identity;
-        selectedJewelleryBox.transform.localScale = Vector3.one;
+        selectedJewelleryBox.transform.localScale = Vector3.zero;
+        starParticle.SetActive(true);
+        LeanTween.scale(selectedJewelleryBox, Vector3.one, 0).setSpeed(1.5f).setEase(LeanTweenType.easeOutElastic);
         //ResetTransform();
     }
 }

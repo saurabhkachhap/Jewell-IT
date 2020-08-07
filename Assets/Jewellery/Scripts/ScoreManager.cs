@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -10,15 +11,17 @@ public class ScoreManager : MonoBehaviour
     private FloatVariable totalScore;
     [SerializeField]
     private TransformProperty anchorProperty;
-   
+    [SerializeField]
+    private GameObject gemBox;
+    [SerializeField]
+    private GameObject gems;
+
     [SerializeField]
     private Move pendentDesignWindow;
     [SerializeField]
-    private GameObject jewelleryBox;
-    [SerializeField]
     private GameObject autoFillWindow;
     [SerializeField]
-    private GameObject jewelleryDisplayBoxWindow;
+    private GameObject jewelleryBoxShop;
     [SerializeField]
     private GameObject nextButton;
     [SerializeField]
@@ -30,10 +33,15 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]
     private Feedbacks feedbacks;
     private bool _isDisabled = false;
+    private BGScript bGScript;
+    private TaskDiscription _taskDiscription;
+    private Holder _holder;
 
     private void Awake()
     {
-        //ValuePerPiece();     
+        bGScript = FindObjectOfType<BGScript>();
+        _taskDiscription = GetComponent<TaskDiscription>();
+        _holder = FindObjectOfType<Holder>();
     }
 
     public void SetTotalNoOfJewelleryPieces(int count)
@@ -49,7 +57,6 @@ public class ScoreManager : MonoBehaviour
 
     public void CalculateScore(JewellerPiece.piece anchorType, JewellerPiece.piece jewelleryType)
     {
-        //if(anchorProperty.GetAnchorType() == anchorProperty.GetCurrentSelectedPiece())
         if(anchorType == jewelleryType)
         {
             //Debug.Log("scored it");
@@ -82,16 +89,21 @@ public class ScoreManager : MonoBehaviour
     {
         if (pendentDesignWindow.enabled && _isComplete)
         {
-            //pendentDesignWindow.SetActive(false);
-            jewelleryDisplayBoxWindow.SetActive(true);
+            bGScript.ChangeBgColor(3);
+            jewelleryBoxShop.SetActive(true);
+            _holder.gameObject.SetActive(false);
             pendentDesignWindow.gameObject.SetActive(false);
             nextButton.SetActive(false);
+            _taskDiscription.SetTaskDiscription();
         }
 
         if (_isComplete)
         {
-            //pendentDesignWindow.enabled = true;
-            //jewelleryBox.SetActive(false);
+            gems.SetActive(false);
+            gemBox.SetActive(false);
+   
+            bGScript.ChangeBgColor(2);
+            _taskDiscription.SetTaskDiscription();
             pendentDesignWindow.enabled = true;
             _touchInput.enabled = false;
         }
@@ -99,7 +111,6 @@ public class ScoreManager : MonoBehaviour
         {
             autoFillWindow.SetActive(true);
         }
-       
     }
 
     public void IsComplete()
@@ -113,7 +124,4 @@ public class ScoreManager : MonoBehaviour
     {
         _isDisabled = true;
     }
-
-
-
 }
