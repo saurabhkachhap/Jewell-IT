@@ -10,6 +10,7 @@ Material:
   m_Name: Hexa_Mat_Hollow
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _ENVIRONMENTREFLECTIONS_OFF _RECEIVE_SHADOWS_OFF _SPECULARHIGHLIGHTS_OFF
+    _SPECULAR_SETUP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -89,13 +90,13 @@ Material:
     - _SrcBlend: 5
     - _Surface: 1
     - _UVSec: 0
-    - _WorkflowMode: 1
+    - _WorkflowMode: 0
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.015686274, g: 1, b: 0.27802488, a: 1}
     - _Color: {r: 0.0039215535, g: 0.83561504, b: 0.85882354, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.9622642, g: 0.17226993, b: 0.14978641, a: 1}
+    - _SpecColor: {r: 0.5510218, g: 0.7830189, b: 0.53555536, a: 1}
 --- !u!114 &723750781724900760
 MonoBehaviour:
   m_ObjectHideFlags: 11

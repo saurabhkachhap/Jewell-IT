@@ -10,6 +10,7 @@ Material:
   m_Name: Square_Mat_Hollow
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _ENVIRONMENTREFLECTIONS_OFF _RECEIVE_SHADOWS_OFF _SPECULARHIGHLIGHTS_OFF
+    _SPECULAR_SETUP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -90,13 +91,13 @@ Material:
     - _SrcBlend: 5
     - _Surface: 1
     - _UVSec: 0
-    - _WorkflowMode: 1
+    - _WorkflowMode: 0
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.9811321, g: 0.9643217, b: 0.0786757, a: 1}
     - _Color: {r: 0.0039215535, g: 0.83561504, b: 0.85882354, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.12758097, g: 0.432117, b: 0.4433962, a: 1}
+    - _SpecColor: {r: 0.6152703, g: 0.6698113, b: 0.18009077, a: 1}
 --- !u!114 &723750781724900760
 MonoBehaviour:
   m_ObjectHideFlags: 11

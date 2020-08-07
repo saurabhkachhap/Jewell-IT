@@ -95,6 +95,7 @@ public class ScoreManager : MonoBehaviour
             pendentDesignWindow.gameObject.SetActive(false);
             nextButton.SetActive(false);
             _taskDiscription.SetTaskDiscription();
+            undoButton.SetActive(false);
         }
 
         if (_isComplete)
@@ -106,6 +107,7 @@ public class ScoreManager : MonoBehaviour
             _taskDiscription.SetTaskDiscription();
             pendentDesignWindow.enabled = true;
             _touchInput.enabled = false;
+            
         }
         else
         {
@@ -117,11 +119,12 @@ public class ScoreManager : MonoBehaviour
     {
         //auto fill jwellery
         _isComplete = true;
-        undoButton.SetActive(false);
+        
     }
 
     public void DisableFeedBack()
     {
         _isDisabled = true;
+        
     }
 }
