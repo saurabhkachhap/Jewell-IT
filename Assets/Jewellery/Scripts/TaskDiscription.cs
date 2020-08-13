@@ -47,7 +47,7 @@ public class TaskDiscription : MonoBehaviour
     private void SetTaskIndicator()
     {
         if (i > taskIndicator.Length - 1) return;
-        Debug.Log("enable image");
+        //Debug.Log("enable image");
         taskIndicator[i].enabled = true;
     }
     

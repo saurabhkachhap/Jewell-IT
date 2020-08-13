@@ -1,6 +1,4 @@
-﻿using System;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AlphaText : MonoBehaviour
 {
@@ -9,31 +7,20 @@ public class AlphaText : MonoBehaviour
     [SerializeField]
     private LeanTweenType tweenType;
 
-
-    private TextMeshProUGUI _text;
+    private RectTransform _textRect;
     
     private void Awake()
     {
-        _text = GetComponent<TextMeshProUGUI>();
+        _textRect = GetComponent<RectTransform>();
     }
 
     public void IncreaseOpacity()
     {
-        LeanTween.value(gameObject, OnValueChange, 0f, 1f, 0).setSpeed(speed).setEase(tweenType);
+        LeanTween.textAlpha(_textRect, 1f, 0.6f).setEase(tweenType);  
     }
 
     public void DecreaseOpacity()
     {
-        LeanTween.value(gameObject, OnValueChange, 1f, 0f, 0).setSpeed(speed).setEase(tweenType).setOnComplete(StopAnimation);
-    }
-
-    private void StopAnimation()
-    {
-        LeanTween.cancelAll();
-    }
-
-    private void OnValueChange(float value)
-    {
-        _text.alpha = value;
+        LeanTween.textAlpha(_textRect, 0f, 0.6f).setEase(tweenType);
     }
 }

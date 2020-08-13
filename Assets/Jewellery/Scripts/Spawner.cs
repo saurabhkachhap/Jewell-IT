@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour
 
     private LevelManager _levelManager;
     private List<GameObject> assetsInMemory;
-
+    private float _offset = 0.3f;
 
     private void Awake()
     {
@@ -53,7 +53,9 @@ public class Spawner : MonoBehaviour
                     if (g.Status == AsyncOperationStatus.Succeeded)
                     {
                         //var result = g.Result;
-                        g.Result.transform.position = jwellerySpawnPoint.position;
+                        g.Result.transform.position = new Vector3(jwellerySpawnPoint.position.x + Random.Range(-_offset, _offset),
+                                                                    jwellerySpawnPoint.position.y,
+                                                                    jwellerySpawnPoint.position.z + Random.Range(-_offset, _offset));
                         assetsInMemory.Add(g.Result);
                     }
                 };
@@ -62,13 +64,6 @@ public class Spawner : MonoBehaviour
         }
         
     }
-
-    //private void SpawnPendent()
-    //{
-    //    var g = Addressables.InstantiateAsync(_levelManager.GetCurrentLevel().pendents, pendentSpawnPoint);
-    //    assetsInMemory.Add(g.Result);
-    //    //container.SetActive(false);
-    //}
 
     public void SpawnAnchor()
     {

@@ -16,6 +16,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8786702633919169696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833586192268599542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15877807, y: 0.15212691, z: 0.03868324}
+  m_Center: {x: -0.0013278574, y: 0.008097764, z: -0.0000000018626451}
 --- !u!114 &3933438836339882816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,19 +72,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dustFx: {fileID: 5538247779098097349, guid: 0321e7d795c0fa94eacc114dad7c6c32, type: 3}
---- !u!65 &8786702633919169696
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3833586192268599542}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15877807, y: 0.15212691, z: 0.03868324}
-  m_Center: {x: -0.0013278574, y: 0.008097764, z: -0.0000000018626451}
 --- !u!1001 &8137387723344118772
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -375,6 +375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd89aa862df90ee459392afa6cbe8f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSelected: 0
+  selectedImg: {fileID: 0}
+  deselectedImg: {fileID: 0}
 --- !u!1 &7499069658338444511
 GameObject:
   m_ObjectHideFlags: 0

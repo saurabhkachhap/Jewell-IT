@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Feedbacks : MonoBehaviour
 {
     [SerializeField]
     private string[] feedbackStrings;
     [SerializeField]
-    private TextMeshProUGUI feedbackText;
+    private Text feedbackText;
     [SerializeField]
     private TransformProperty anchorProperty;
 
@@ -16,7 +17,7 @@ public class Feedbacks : MonoBehaviour
     private Camera _cam;
     private MoveUI _moveUI;
     private Vector3 _anchorScreenPos;
-    private WaitForSeconds _waitForSeconds = new WaitForSeconds(1.5f);
+    private WaitForSeconds _waitForSeconds = new WaitForSeconds(1f);
 
     private void Awake()
     {

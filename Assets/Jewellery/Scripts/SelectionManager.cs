@@ -100,7 +100,7 @@ public class SelectionManager : MonoBehaviour
         }           
     }
 
-    long[] pattern = new long[] { 0, 5, 5, 5,0 };
+    //long[] pattern = new long[] { 0, 5, 5, 5,0 };
     public void FlickObjects()
     {
         

@@ -1,25 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UndoBooster : MonoBehaviour
 {
-    private int noOfBostersLeft = 2;
+    private int noOfBostersLeft = 3;
     [SerializeField]
     private TextMeshProUGUI boosterCount;
-    //private Dictionary<GameObject,Vector3> _history = new Dictionary<GameObject, Vector3>();
+    [SerializeField]
+    private Image boosterBtn;
+    [SerializeField]
+    private Sprite disabledSprite;
     private List<ArrayList> _history = new List<ArrayList>();
 
     private void Awake()
     {
-        boosterCount.text = noOfBostersLeft.ToString();
+        boosterCount.text = (noOfBostersLeft - 1).ToString();
     }
 
     public void AddToHistory(GameObject lastObj, Vector3 pos, GameObject anchor)
     {
-        //var anchor = SvedObject.GetHitObject().gameObject;
         _history.Add(new ArrayList { lastObj ,pos ,anchor});
     }
 
@@ -37,8 +39,29 @@ public class UndoBooster : MonoBehaviour
             lastPiece.transform.SetParent(parent);
             lastPiece.tag = "Selectable";
             noOfBostersLeft--;
-            boosterCount.text = noOfBostersLeft.ToString();
+            UpdateText();
             _history.Remove(lastIndex);
+            
+        }
+    }
+
+    private void UpdateText()
+    {
+        switch (noOfBostersLeft)
+        {
+            case 3:
+                boosterCount.text = "2";
+                break;
+            case 2:
+                boosterCount.text = "1";
+                break;
+            case 1:
+                boosterCount.text = "Free";
+                break;
+            case 0:
+                boosterBtn.sprite = disabledSprite;
+                boosterCount.text = "";
+                break;
         }
         
     }

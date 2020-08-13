@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PendentSelection : MonoBehaviour
 {
@@ -6,11 +7,16 @@ public class PendentSelection : MonoBehaviour
     private GameObject _currentSelection;
     private GameObject _lastSelection;
     private Holder _holder;
+    public bool _isSelected;
+    private Button _lastSelected;
+    [SerializeField]
+    private Sprite selectedImg;
+    [SerializeField]
+    private Sprite deselectedImg;
 
     private void Awake()
     {
-        _holder = FindObjectOfType<Holder>();
-        
+        _holder = FindObjectOfType<Holder>();     
     }
 
 
@@ -29,6 +35,29 @@ public class PendentSelection : MonoBehaviour
         _currentSelection = Instantiate(pendent, pendentAnchorPoint.position, pendentAnchorPoint.rotation);
         _currentSelection.transform.SetParent(_holder.transform);
         _lastSelection = _currentSelection;
+    }
 
+    public void SetImage(Button currentSelcted)
+    {
+        Debug.Log(currentSelcted);
+        var img = currentSelcted.GetComponent<Image>();
+        if (currentSelcted != _lastSelected)
+        {
+            _lastSelected = currentSelcted;
+        }
+       
+        _isSelected = !_isSelected;
+
+        if (_isSelected)
+        {
+            Debug.Log("button selected");
+            img.sprite = selectedImg;
+        }
+        else
+        {
+            Debug.Log("not selected");
+            img.sprite = deselectedImg;
+        }
+       
     }
 }

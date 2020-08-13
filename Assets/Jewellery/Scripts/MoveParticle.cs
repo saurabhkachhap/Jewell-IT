@@ -52,7 +52,7 @@ public class MoveParticle : MonoBehaviour
             cash.transform.localScale = Vector3.one;
             cash.transform.localRotation = Quaternion.identity;
 
-            LeanTween.move(cash, destination.transform.position, 0).setSpeed(speed).setEase(tweenType);
+            LeanTween.move(cash, destination.transform.position, 0.5f).setEase(tweenType);
             //yield return new WaitForSeconds(0.2f);
         }
     }

@@ -11,4 +11,5 @@ public class Level : ScriptableObject
     public AssetReferenceGameObject anchorPoints;
     [Space]
     public AssetReferenceGameObject jewelleryDesign;
+    public int totalReward;
 }

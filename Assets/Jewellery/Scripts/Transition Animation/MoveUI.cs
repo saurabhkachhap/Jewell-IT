@@ -29,7 +29,7 @@ public class MoveUI : MonoBehaviour
 
     public void MoveUiPosition(Vector3 pos)
     {
-        var newPos = moveTo +pos;
-        LeanTween.moveY(_rect, newPos.y, 0f).setSpeed(speed).setEase(tweenType);
+        var newPos = moveTo + pos;
+        LeanTween.moveY(_rect, newPos.y, 1f).setEase(tweenType);
     }
 }
